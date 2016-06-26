@@ -1,7 +1,5 @@
 # sprout-wrap
 
-[![Build Status](https://travis-ci.org/pivotal-sprout/sprout-wrap.png?branch=master)](https://travis-ci.org/pivotal-sprout/sprout-wrap)
-
 ## Prerequisites
 
 Download and install [XCode 7 from the App Store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
@@ -13,7 +11,7 @@ To provision your machine, open up Terminal and enter the following:
 ```sh
 sudo xcodebuild -license
 xcode-select --install
-git clone https://github.com/pivotal-sprout/sprout-wrap.git
+git clone https://github.com/DiyahM/sprout-wrap.git
 cd sprout-wrap
 caffeinate ./sprout
 ```
