@@ -8,93 +8,38 @@ recipes:
 - homebrew::install_formulas
 - homebrew::install_casks
 
-# apps
-- sprout-osx-apps::iterm2
-- sprout-osx-apps::shiftit
-
 # settings
-- sprout-osx-settings
-- sprout-osx-settings::dock_preferences
 - sprout-terminal
-- sprout-ssh::known_hosts_github
 
 # development (general)
-- sprout-base::workspace_directory
 - sprout-git
-- sprout-git::default_editor
-- sprout-git::projects
-- sprout-git::git_scripts
 
 # development (rails)
-- sprout-rbenv
 - sprout-ruby
 - sprout-mysql
 - sprout-postgresql
 
-# apps (editors)
-- sprout-osx-apps::textmate_preferences
-- sprout-jetbrains-editors::rubymine
-
 node_attributes:
   sprout:
     git:
-      domain: pivotal.io
+      domain: playpenlabs.com
       authors:
-        - initials: ah
-          name: Abhijit Hiremagalur
-          username: abhi
-        - initials: bc
-          name: Brian Cunnie
-          username: cunnie
-        - initials: jrhb
-          name: Jonathan Barnes
-        - initials: lw
-          name: Luke Winikates
-          username: lwinikates
-      projects:
-        -
-          name: sprout-wrap
-          url: https://github.com/pivotal-sprout/sprout-wrap.git
+        - initials: hm 
+          name: Hadiyah Mujhid 
+          username: DiyahM 
     terminal:
       default_profile: 'Pro'
-    settings:
-      clock_format: EEE MMM d  h:mm:ss a
-    dock_preferences:
-      orientation: 'left'
-      auto_hide: true
-      clear_apps: true
-      tile_size: 35
-      magnification: false
   homebrew:
-    taps:
-      - universal-ctags/universal-ctags
     formulas:
-      - name: universal-ctags
-        head: true
-      - ag
+      - ack 
       - chromedriver
       - imagemagick
-      - node
-      - pstree
-      - qt
-      - ssh-copy-id
-      - tmux
-      - tree
-      - watch
       - wget
-      - rbenv-binstubs
     casks:
       - firefox
-      - flycut
-      - rowanj-gitx
-      - github-desktop
       - google-chrome
       - google-drive
-      - google-hangouts
       - macvim
-      - skype
-      - textmate
-      - vagrant
-      - virtualbox
       - xquartz
       - xscope
+      - dropbox
